@@ -45,7 +45,7 @@ public abstract class Reporter {
 	public ExtentReports startResult(){
 		testDriver = new HashMap<RemoteWebDriver, ExtentTest>();
 		extent = new ExtentReports("./reports/result.html", false);
-		extent.loadConfig(new File("./src/main/resources/extent-config.xml"));
+		extent.loadConfig(new File("./extent.xml"));
 		return extent;
 	}
 
